@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rupeshkumar Yadav">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="Form validator in vannila javascript">
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Validator</title>
+</head>
+<body>
+    <div class="container">
+        <form id="form" class="form">
+            <h2>Register with us!</h2>
+            <div class="form-control">
+                <label for="uName">Username:</label>
+                <input id="uName" type="text" placeholder="Enter Username">
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <label for="email">Email:</label>
+                <input id="email" type="email" placeholder="Enter Email">
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <label for="pass">Password:</label>
+                <input id="pass" type="password" placeholder="Enter Password">
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <label for="pass1">Re-enter Password:</label>
+                <input id="pass1" type="password" placeholder="Re-Enter Password">
+                <small>Error Message</small>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
