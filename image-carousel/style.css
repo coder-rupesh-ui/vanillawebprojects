@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: sans-serif;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.slider {
+    width: 100%;
+    max-width: 800px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.slide {
+    width: 100%;
+    max-width: 800px;
+    height: 350px;
+    position: absolute;
+    transition: all 0.5s;
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    z-index: 1;
+    cursor: pointer;
+    background: #fff;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.btn:active {
+    transform: scale(1.1);
+}
+.btn-prev {
+    top: 45%;
+    left: 2%;
+}
+.btn-prev::before {
+    content: '<'
+}
+.btn-next {
+    top: 45%;
+    right: 2%;
+}
+.btn-next::before {
+    content: ">";
+}
+.btn.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+.dot-selectors {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    max-width: 300px;
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+    transform: translateX(-50%);
+}
+.selector {
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.selector.active {
+    background: #fff;
+}
